@@ -33,7 +33,6 @@ flatpak-builder --user --install --force-clean build-dir com.github.kindleweb.Ki
 gcc -O2 -Wall -Wextra -o kindle-web src/main.c $(pkg-config --cflags --libs gtk4 webkitgtk-6.0)
 ```
 
-<<<<<<< HEAD
 ## Running
 
 ### Run Flatpak
