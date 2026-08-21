@@ -58,4 +58,3 @@ MIT
 =======
 # 012_flatpak_for_AmazonKindle
 Electron web wrapper in form of Flatpak for Amazon Kindle.
->>>>>>> bd251d7c07f8b82044c4f72c3a2bd39bfe7fd6d4
