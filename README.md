@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kindle Web Wrapper
 
 An unofficial Linux desktop wrapper for Amazon Kindle for Web, built with GTK4 and WebKitGTK.
@@ -35,7 +36,8 @@ gcc -O2 -Wall -Wextra -o kindle-web src/main.c $(pkg-config --cflags --libs gtk4
 
 ## License
 
-## MIT License
+MIT
 =======
 # 012_flatpak_for_AmazonKindle
 Electron web wrapper in form of Flatpak for Amazon Kindle.
+>>>>>>> 360b126ca7a56a9286f42653f387545d0f513b85

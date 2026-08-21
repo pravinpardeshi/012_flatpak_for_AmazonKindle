@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Kindle
+Comment=Read your Kindle books using Kindle for Web
+Exec=kindle-web
+Icon=com.github.kindleweb.Kindle
+Terminal=false
+Type=Application
+Categories=Office;Literature;Viewer;
+StartupNotify=true
+
+

@@ -1,0 +1,36 @@
+app-id: com.github.kindleweb.Kindle
+runtime: org.gnome.Platform
+runtime-version: "48"
+sdk: org.gnome.Sdk
+
+command: kindle-web
+
+finish-args:
+  - --share=network
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+
+modules:
+  - name: kindle-web
+    buildsystem: simple
+
+    build-commands:
+      - gcc -O2 -Wall -Wextra -o kindle-web main.c $(pkg-config --cflags --libs gtk4 webkitgtk-6.0)
+      - install -Dm755 kindle-web /app/bin/kindle-web
+      - install -Dm644 com.github.kindleweb.Kindle.desktop /app/share/applications/com.github.kindleweb.Kindle.desktop
+      - install -Dm644 com.github.kindleweb.Kindle.metainfo.xml /app/share/metainfo/com.github.kindleweb.Kindle.metainfo.xml
+      - install -Dm644 com.github.kindleweb.Kindle.svg /app/share/icons/hicolor/scalable/apps/com.github.kindleweb.Kindle.svg
+
+    sources:
+      - type: file
+        path: src/main.c
+      - type: file
+        path: com.github.kindleweb.Kindle.desktop
+      - type: file
+        path: com.github.kindleweb.Kindle.metainfo.xml
+      - type: file
+        path: com.github.kindleweb.Kindle.svg
+
+
