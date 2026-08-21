@@ -49,11 +49,8 @@ flatpak run com.github.kindleweb.Kindle
 
 ## License
 
-MIT
-=======
-## License
+### MIT
 
-MIT
 =======
 # 012_flatpak_for_AmazonKindle
 Electron web wrapper in form of Flatpak for Amazon Kindle.
