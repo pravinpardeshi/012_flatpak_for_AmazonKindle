@@ -35,7 +35,7 @@ gcc -O2 -Wall -Wextra -o kindle-web src/main.c $(pkg-config --cflags --libs gtk4
 
 ## License
 
-MIT
+MIT License
 =======
 # 012_flatpak_for_AmazonKindle
 Electron web wrapper in form of Flatpak for Amazon Kindle.
